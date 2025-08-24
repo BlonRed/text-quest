@@ -13,7 +13,7 @@ public class InitServlet extends HttpServlet {
     private Integer countTries;
     private Integer countWins;
     @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
+    public void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
         HttpSession session = req.getSession();
 
         if (!checkAlreadyInit()) {
